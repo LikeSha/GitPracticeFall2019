@@ -33,12 +33,64 @@ package day1;
  * stage changes ( prepare files for commit)
  * git add/path/to the file
  * or , if you want to stage all of them, just put.
+ * git add .
+ * next step, commit it and don't forget about message.
+ * git commit -m "my first commit"
+ * if you didnt ignore some files/folders, its not too late to fix it.
+ * execute following command:
+ * for example : git rm --cached .idea
+ * and git rm --cached *.iml
+ *
+ * Once we staged files ,it's time to commit them L
+ * git commit -m "commit message'
+ * -m - stands for message and will be followed by" message"
+ * commit message has to describe changes in a nutshell. At work, I usually was
+ * specifying Jira issue number, for example L
+ * git commit -m "VYT-4122 User should be able to reset password"
+ *
+ * If you committed .idea folder- don't worry, it's just a practice. Next time, you
+ * will know what to do. We learn from mistakes.
+ *
+ * Then , we need to create remote repository
+ * Repository ---- creates only once
+ *
+ * This line of code , connects local repository with remote.
+ *
+ * Local--your computer
+ * remote--github
+ * git remote add origin https://github.com/LikeSha/GitPracticeFall2019.git
+ * Following command should be exectued only once at the beginning.
+ * Not before every commit .Only Once. To establish connection
+ *
+ * Last command to send your code to the github:
+ * git push -u origin master
+ * If, you are getting popup, that is asking username and password, please enter your github
+ * username and password, You should get this popup onl once
+ *
+ * If you are getting....remote: Invalid username or password.
+ * Your credentials are wrong :(
+ * if you have entered username and password, password will be INVISIBLE
+ * IN UNIX system(Mac OS, Linux) and Windows password is always INVISIBLE
+ * Your terminal is asking for password:
+ * Enter your password :( any kind of input will be invisble)
+ * Its not only about git. Its for any program due to security
+ * If you failed first attempt, push again and try to enter username and password
+ *
+ * summary :
+ * git init
+ * create .gitignore file and ignore .idea and *.iml. Save and close file
+ * git add .
+ * git commit -m "first commit"
+ * git remote add origin https://github.com/LikeSha/GitPracticeFall2019.git
+ * git push -u origin master
  */
 public class StringPractice {
 
     public static void main(String[] args) {
 
         System.out.println("Hello, world!");
+        String str = "Java is fun!";
+        System.out.println(str);
 
     }
 }
