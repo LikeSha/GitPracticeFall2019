@@ -83,6 +83,30 @@ package day1;
  * git commit -m "first commit"
  * git remote add origin https://github.com/LikeSha/GitPracticeFall2019.git
  * git push -u origin master
+ *
+ *master------default branch name
+ * origin---refers to name of remote branch
+ *
+ *
+ * If everything was successful, further you will need just 3 commands:
+ * git add .
+ * git commit -m 'commit message"
+ * git push
+ *
+ * only 3 commands. First time , it's always more complicated to setup repository
+ * and connect it .
+ *
+ *
+ * If you are getting this error: The current branch master has no upstream branch.
+ * Because you have missed last step : git push -u origin master
+ *
+ * Git allows to track multiple versions of the project at the same time. IT calls branching.
+ * Currently ,we have only 1--master. We have to map our master local branch with master
+ * remote aka origin master, that is located in github.
+ *
+ * upstream--
+ *
+ *
  */
 public class StringPractice {
 
